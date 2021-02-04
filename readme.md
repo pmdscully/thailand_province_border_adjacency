@@ -79,7 +79,7 @@ By default, a `Province` has an identifier as `p.PROV_NAME` and other data `p.da
 
 For example:
 
-```
+```python
 # Import the module:
 from province_neighbours import read_provincial_dataset, read_relations_dataset, Province, ProvinceRelationParser
 
@@ -96,7 +96,7 @@ prp._report_relation_errors()  # or `prp._relation_error` in list format
 prp._report_province_naming_errors() # or `prp._province_naming_errors`
 ```
 At this point, we have parsed and verified the mappings. Next, use the dictionary in your application:
-```
+```python
 # Get the dictionary of mappings:
 dictionary_of_mappings = prp.get_mappings_dict()
 for k,v in dictionary_of_mappings.items():
@@ -114,7 +114,7 @@ print( len(neighbours) )
 ```
 
 ### How to Run Our Code:
-```
+```bash
 git clone https://github.com/pmdscully/thailand_province_border_adjacency.git
 python --version    # Verify Python version is => Py 3.x
 pip install pandas==0.23.0
@@ -122,7 +122,7 @@ cd thailand_province_border_adjacency\test
 python test_province_relation_parser.py
 ```
 Once all tests pass, then:
-```
+```bash
 cd ..\src
 python province_neighbours.py
 ```
