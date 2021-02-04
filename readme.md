@@ -1,6 +1,6 @@
 # Thailand Province Border-Adjacency Mappings
 
-**Project:** This project creates a mapping dataset between adjacent provinces in Thailand. Dataset uses a data-relations `X -> Y, Z` convention, so we can easily integrate neighbouring provincial-level-data or visualise the relations as below using GraphViz:
+**Project:** This project creates a mapping dataset between adjacent provinces in Thailand. Dataset uses a data-relations `X -> Y, Z` convention, so we can easily integrate neighbouring provincial-level-data or visualise the relations as below using GraphViz. Python code is included to parse/verify and integrate the mappings into your own software applications.
 
 ![Adjacency map](Thailand_Province_Neighbours.png)
 
