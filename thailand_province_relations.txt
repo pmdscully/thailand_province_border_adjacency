@@ -1,0 +1,77 @@
+Nong Khai -> Bueng Kan, Udon Thani, Sakon Nakhon, Loei
+Bueng Kan -> Nakhon Phanom, Sakon Nakhon, Nong Khai
+Nakhon Phanom -> Sakon Nakhon, Mukdahan, Bueng Kan
+Mukdahan -> Nakhon Phanom, Sakon Nakhon, Kalasin, Roi Et, Yasothon, Amnat Charoen
+Sakon Nakhon -> Nakhon Phanom, Bueng Kan, Nong Khai, Udon Thani, Kalasin, Mukdahan
+Kalasin -> Sakon Nakhon, Mukdahan, Roi Et, Maha Sarakham, Khon Kaen, Udon Thani
+Khon Kaen -> Udon Thani, Kalasin, Maha Sarakham, Buri Ram, Nakhon Ratchasima, Chaiyaphum, Phetchabun, Loei, Nong Bua Lamphu
+Maha Sarakham -> Kalasin, Roi Et, Surin, Buri Ram, Khon Kaen
+Roi Et -> Kalasin, Mukdahan, Yasothon, Si Sa Ket, Surin, Maha Sarakham
+Yasothon -> Mukdahan, Amnat Charoen, Ubon Ratchathani, Si Sa Ket, Roi Et
+Amnat Charoen -> Mukdahan, Ubon Ratchathani, Yasothon
+Ubon Ratchathani -> Amnat Charoen, Yasothon, Si Sa Ket
+Si Sa Ket -> Ubon Ratchathani, Yasothon, Roi Et, Surin
+Surin -> Si Sa Ket, Roi Et, Maha Sarakham, Buri Ram
+Buri Ram -> Surin, Maha Sarakham, Khon Kaen, Nakhon Ratchasima, Sa Kaeo
+Nakhon Ratchasima -> Khon Kaen, Buri Ram, Chaiyaphum, Lop Buri, Saraburi, Nakhon Nayok, Prachin buri, Sa Kaeo
+Udon Thani -> Nong Khai, Sakon Nakhon, Kalasin, Khon Kaen, Nong Bua Lamphu, Loei
+Nong Bua Lamphu -> Udon Thani, Loei, Khon Kaen
+Loei -> Nong Khai, Udon Thani, Nong Bua Lamphu, Khon Kaen, Phetchabun, Phitsanulok
+Chaiyaphum -> Khon Kaen, Nakhon Ratchasima, Lop Buri, Phetchabun
+Phetchabun -> Loei, Khon Kaen, Chaiyaphum, Lop Buri, Nakhon Sawan, Phichit, Phitsanulok
+Phitsanulok -> Loei, Phetchabun, Phichit, Kamphaeng Phet, Sukhothai, Uttaradit
+Uttaradit -> Phitsanulok, Sukhothai, Phrae, Nan
+Nan -> Phayao, Phrae, Uttaradit
+Phayao -> Nan, Phrae, Lampang, Chiang Rai
+Chiang Rai -> Chiang Mai, Lampang, Phayao
+Phrae -> Nan, Uttaradit, Sukhothai, Lampang, Phayao
+Sukhothai -> Phrae, Uttaradit, Lampang, Tak, Kamphaeng Phet, Phitsanulok
+Lampang -> Chiang Rai, Phayao, Phrae, Sukhothai, Tak, Lamphun, Chiang Mai
+Chiang Mai -> Chiang Rai, Lampang, Lamphun, Tak, Mae Hong Son
+Lamphun -> Lampang, Chiang Mai, Tak
+Mae Hong Son -> Chiang Mai, Tak
+Kamphaeng Phet -> Tak, Sukhothai, Phitsanulok, Phichit, Nakhon Sawan
+Phichit -> Phitsanulok, Phetchabun, Kamphaeng Phet, Nakhon Sawan
+Nakhon Sawan -> Kamphaeng Phet, Phichit, Phetchabun, Lop Buri, Sing Buri, Chai Nat, Uthai Thani, Tak
+Tak -> Kanchanaburi, Uthai Thani, Nakhon Sawan, Kamphaeng Phet, Sukhothai, Lampang, Lamphun, Chiang Mai, Mae Hong Son
+Uthai Thani -> Suphan Buri, Chai Nat, Nakhon Sawan, Tak, Kanchanaburi
+Chai Nat -> Sing Buri, Nakhon Sawan, Uthai Thani, Suphan Buri
+Sing Buri -> Ang Thong, Lop Buri, Nakhon Sawan, Chai Nat, Suphan Buri
+Lop Buri -> Saraburi, Nakhon Ratchasima, Chaiyaphum, Phetchabun, Nakhon Sawan, Sing Buri, Ang Thong, Phra Nakhon Si Ayutthaya
+Suphan Buri -> Kanchanaburi, Nakhon Pathom, Phra Nakhon Si Ayutthaya, Ang Thong, Sing Buri, Chai Nat, Uthai Thani
+Ang Thong -> Suphan Buri, Phra Nakhon Si Ayutthaya, Lop Buri, Sing Buri
+Kanchanaburi -> Ratchaburi, Nakhon Pathom, Suphan Buri, Uthai Thani, Tak
+Phra Nakhon Si Ayutthaya -> Pathum Thani, Saraburi, Lop Buri, Ang Thong, Suphan Buri, Nakhon Pathom, Nonthaburi
+Saraburi -> Nakhon Nayok, Nakhon Ratchasima, Lop Buri, Phra Nakhon Si Ayutthaya, Pathum Thani
+Nakhon Nayok -> Chachoengsao, Prachin Buri, Nakhon Ratchasima, Saraburi, Pathum Thani
+Pathum Thani -> Bangkok, Nonthaburi, Phra Nakhon Si Ayutthaya, Saraburi, Nakhon Nayok, Chachoengsao
+Nonthaburi -> Bangkok, Nakhon Pathom, Phra Nakhon Si Ayutthaya, Pathum Thani
+Nakhon Pathom -> Samut Sakhon, Bangkok, Nonthaburi, Phra Nakhon Si Ayutthaya, Suphan Buri, Kanchanaburi, Ratchaburi
+Bangkok -> Samut Sakhon, Nakhon Pathom, Nonthaburi, Pathum Thani, Chachoengsao, Samut Prakan
+Samut Sakhon -> Samut Songkhram, Ratchaburi, Bangkok, Nakhon Pathom
+Samut Prakan -> Chachoengsao, Bangkok
+Prachin Buri -> Chachoengsao, Sa Kaeo, Nakhon Ratchasima, Nakhon Nayok
+Sa Kaeo -> Chanthaburi, Chachoengsao, Prachin Buri, Nakhon Ratchasima, Buri Ram
+Chachoengsao -> Chon Buri, Chanthaburi, Sa Kaeo, Prachin Buri, Nakhon Nayok, Pathum Thani, Bangkok, Samut Prakan
+Chon Buri -> Rayong, Chanthaburi, Chachoengsao
+Rayong -> Chon Buri, Chanthaburi
+Chanthaburi -> Trat, Rayong, Sa Kaeo, Chon Buri, Chachoengsao
+Trat -> Chanthaburi
+Samut Songkhram -> Ratchaburi, Phetchaburi, Samut Sakhon
+Ratchaburi -> Phetchaburi, Samut Songkhram, Samut Sakhon, Nakhon Pathom, Kanchanaburi
+Phetchaburi -> Prachuap Khiri Khan, Ratchaburi, Samut Songkhram
+Prachuap Khiri Khan -> Chumphon, Phetchaburi
+Chumphon -> Ranong, Surat Thani, Prachuap Khiri Khan
+Ranong -> Phangnga, Surat Thani, Chumphon
+Phangnga -> Phuket, Krabi, Surat Thani, Ranong
+Surat Thani -> Phangnga, Krabi, Nakhon Si Thammarat, Chumphon, Ranong
+Phuket -> Phangnga
+Krabi -> Nakhon Si Thammarat, Trang, Surat Thani, Phangnga
+Nakhon Si Thammarat -> Phatthalung, Krabi, Songkhla, Surat Thani, Trang
+Trang -> Satun, Phatthalung, Nakhon Si Thammarat, Krabi
+Phatthalung -> Songkhla, Satun, Trang, Nakhon Si Thammarat
+Satun -> Songkhla, Trang, Phatthalung
+Songkhla -> Pattani, Yala, Satun, Phatthalung, Nakhon Si Thammarat
+Pattani -> Narathiwat, Yala, Songkhla
+Yala -> Narathiwat, Pattani, Songkhla
+Narathiwat -> Yala, Pattani
