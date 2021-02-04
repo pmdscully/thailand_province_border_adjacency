@@ -75,7 +75,9 @@ The code can parse a mapping dataset into a mapped dictionary format, to then us
 
 The resulting dictionary format is `{ <Province Obj> : [ <Province Obj>, <Province Obj>, ... ] }`. 
 
-By default, a `Province` has an identifier as `p.PROV_NAME` and other data `p.data`, created via `Province(PROV_Name='name',optional_dictionary_of_data)`
+By default, a `Province` has an identifier as `p.PROV_NAME` and other data `p.data`, created via `Province(PROV_Name='name', optional_dictionary_of_data)`
+
+Before we get started, **[download the naming convention dataset by Phannisa Nirattiwongsakorn and Charin Polpanumas](https://raw.githubusercontent.com/pnphannisa/thailand_spatial_resources/master/data/province_data_latlon.csv)** and be ready to store it into your local repo directory (i.e. `thailand_province_border_adjacency/`).
 
 For example:
 
@@ -118,12 +120,12 @@ print( len(neighbours) )
 git clone https://github.com/pmdscully/thailand_province_border_adjacency.git
 python --version    # Verify Python version is => Py 3.x
 pip install pandas==0.23.0
-cd thailand_province_border_adjacency\test
+cd thailand_province_border_adjacency/test
 python test_province_relation_parser.py
 ```
 Once all tests pass, then:
 ```bash
-cd ..\src
+cd ../src
 python province_neighbours.py
 ```
 
