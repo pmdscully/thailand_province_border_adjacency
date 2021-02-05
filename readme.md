@@ -56,7 +56,7 @@ The `data relations` format let's us verify the ***mutual consistency*** of rela
 Province Neighbours are determined using the [Provinces and Administrative Areas Map Image - Wikipedia](https://en.wikipedia.org/wiki/Provinces_of_Thailand) map image (above). The canonical source for resolving ambiguities is the Province's Wikipedia entry. As an example, [Phuket Province - Wikipedia](https://en.wikipedia.org/wiki/Phuket_Province) specifies that *"Phuket Island is connected [...] to Phang Nga Province"*, unambiguously determining `Phuket -> Phang Nga`.
 
 
-By following a naming convention, we can confirm ***naming consistency*** too, ensuring all names exist in a source dataset (i.e. `x` exists in our naming convention dataset). For Thailand mappings, the naming convention dataset used is the spatial provincial dataset for Thailand from [phannisa_province_data_latlon.csv (utf-8)](https://github.com/pnphannisa/thailand_spatial_resources), which uses naming conventions canonically specified by Thai authorities. The same naming set can be found in [Province of Thailand - Wikipedia](https://en.wikipedia.org/wiki/Provinces_of_Thailand).
+By following a naming convention, we can confirm ***naming consistency*** too, ensuring all names exist in a source dataset (i.e. `x` exists in our naming convention dataset). For Thailand mappings, the naming convention dataset used is the spatial provincial dataset for Thailand from [province_data_latlon.csv (utf-8)](https://github.com/pnphannisa/thailand_spatial_resources), which uses naming conventions canonically specified by Thai authorities and includes GIS coordinates per province to additionally integrate data spatially. The same naming set can be found in [Province of Thailand - Wikipedia](https://en.wikipedia.org/wiki/Provinces_of_Thailand).
 
 
 ## Code Requirements:
@@ -86,7 +86,7 @@ For example:
 from province_neighbours import read_provincial_dataset, read_relations_dataset, Province, ProvinceRelationParser
 
 # - Read in the datasets:
-naming_convention_dataset = read_provincial_dataset( filename="../phannisa_province_data_latlon_v02_utf8.csv" )
+naming_convention_dataset = read_provincial_dataset( filename="../province_data_latlon.csv" )
 mappings = read_relations_dataset('../thailand_province_relations.txt')
 
 # - Parse the mappings into a dict format:

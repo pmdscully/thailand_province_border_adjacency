@@ -111,8 +111,8 @@ def read_provincial_dataset( **kwords ):
 
 
 if __name__ == "__main__":
-    # provincial_lookup = read_provincial_dataset( filename="../phannisa_province_data_latlon.csv", encoding="iso8859_11" )
-    provincial_lookup = read_provincial_dataset( filename="../phannisa_province_data_latlon_v02_utf8.csv" )
+    # provincial_lookup = read_provincial_dataset( filename="../province_data_latlon.csv", encoding="iso8859_11" )
+    provincial_lookup = read_provincial_dataset( filename="../province_data_latlon.csv" )
     data = read_relations_dataset('../thailand_province_relations.txt')
     prp = ProvinceRelationParser(data, provincial_lookup)
     print( prp )
