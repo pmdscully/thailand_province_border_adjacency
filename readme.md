@@ -139,7 +139,7 @@ python province_neighbours.py
 1. Just <code>git clone</code> the repository, 
 2. <code>download a province naming dataset</code> , 
 3. <code>import the python module</code>, 
-4. Write about <strong>4 lines of code</strong> to give you a dictionary lookup.
+4. Write about <strong>4 lines of code</strong> to give you a dictionary lookup. *(See code example above).*
 
 
 **I want to SQL join my provincial datasets together, but only for the provinces nextdoor, how can I do that?** Yes, that's precisely what this dataset and code is for. Before you create your SQL query:
@@ -147,9 +147,33 @@ python province_neighbours.py
 1. import the Python module (**`province_neighbours.py`**), 
 2. instantiate the ProvinceRelationsParser object
 3. get the dictionary
-4. perform the dictionary lookup on your key province, this will give you the list of neighbouring provinces. 
+4. perform the dictionary lookup on your key province, this will give you the list of neighbouring provinces. From this extract the names as:
+
+    `[p.PROV_NAME for p in neighbours]` 
 5. Simply plug those names into your SQL query and you are ready!
 
+**Can I get the neighbouring province names in Thai language (UTF-8)?** Yes, certainly, by default you'll use the naming convention dataset to do this:
+1. Download and use `province_data_latlon.csv` dataset (recommended)
+2. Follow the code example above, to get the dictionary of neighbours.
+2. Extract the Thai province names (in UTF-8) by using: 
+
+    `[p.data['PROV_NAMT'] for p in neighbours]`.
+
+**I use Thai language (UTF-8), how to do perform a lookup?** You can, but currently the module dictionary mapping is only English language :'(. The fastest solution is translate the province name from Thai into English, then perform the lookup. Using the module code you can do this:
+
+```python
+# Import the module:
+from province_neighbours import read_provincial_dataset, read_relations_dataset, Province, ProvinceRelationParser
+
+naming_convention_dataset = read_provincial_dataset( filename="../province_data_latlon.csv" )
+
+# Create a translation dict
+lookup_th = dict([(p.data['PROV_NAMT'],p_eng) for p_eng,p in naming_convention_dataset.items()])
+province_name = lookup_th['กระบี่']  # returns 'KRABI'
+
+# Now, province_name can be used to lookup กระบี่/KRABI's neighbours.
+```
+ If you want to make a Pull Request to fix this, feel free to Fork and add Thai province names (`PROV_NAMT` column) as new keys into the parser dictionary.
 
 ## Final words
 
