@@ -113,6 +113,7 @@ print( dictionary_of_mappings[Province('NARATHIWAT')] )
 
 neighbours = dictionary_of_mappings[Province('NARATHIWAT')]
 print( len(neighbours) )
+list_of_neighbour_names = [ p.PROV_NAME for p in neighbours ]
 ```
 
 ### How to Run Our Code:
@@ -128,6 +129,27 @@ Once all tests pass, then:
 cd ../src
 python province_neighbours.py
 ```
+
+## More Q &amp; A
+
+**Is it correct &amp; up to date?** Yes. The newest Thai province change was adding Bueng Kan, which was split-off from Nong Khai, effective on 23 March 2011 - that's included; so it's up-to-date as of Feb 2021. Bangkok is referred to as a Special Administrative Area, but it's included as province in the mappings; giving a total of 77 entries.
+
+**Is it easy to use the mapping dataset by importing a Python module into my own software application?** Yes, you can join province datasets together based on their semantic geo-neighbourhoods  :-). 
+
+1. Just <code>git clone</code> the repository, 
+2. <code>download a province naming dataset</code> , 
+3. <code>import the python module</code>, 
+4. Write about <strong>4 lines of code</strong> to give you a dictionary lookup.
+
+
+**I want to SQL join my provincial datasets together, but only for the provinces nextdoor, how can I do that?** Yes, that's precisely what this dataset and code is for. Before you create your SQL query:
+
+1. import the Python module (**`province_neighbours.py`**), 
+2. instantiate the ProvinceRelationsParser object
+3. get the dictionary
+4. perform the dictionary lookup on your key province, this will give you the list of neighbouring provinces. 
+5. Simply plug those names into your SQL query and you are ready!
+
 
 ## Final words
 

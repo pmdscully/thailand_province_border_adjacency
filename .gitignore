@@ -141,3 +141,4 @@ cython_debug/
 # Repo Custom Ignores:
 *data_latlon*
 *map-max.jpg
+.vscode
