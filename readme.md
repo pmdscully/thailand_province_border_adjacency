@@ -159,7 +159,7 @@ python province_neighbours.py
 
     `[p.data['PROV_NAMT'] for p in neighbours]`.
 
-**I use Thai language (UTF-8), how to do perform a lookup?** You can, but currently the module dictionary mapping is only English language :'(. The fastest solution is translate the province name from Thai into English, then perform the lookup. Using the module code you can do this:
+**I use Thai language (UTF-8), how to perform a lookup?** You can, but currently the module dictionary mapping is only English language :'(. The fastest solution is translate the province name from Thai into English, then perform the lookup. Using the module code you can do this:
 
 ```python
 # Import the module:
