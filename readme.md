@@ -66,7 +66,7 @@ Python 3.x
 ```
 Library Dependencies:
 ```
-pandas==0.23.0
+pandas
 unittest (built-in for Py3)
 ```
 
