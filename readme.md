@@ -120,7 +120,7 @@ list_of_neighbour_names = [ p.PROV_NAME for p in neighbours ]
 ```bash
 git clone https://github.com/pmdscully/thailand_province_border_adjacency.git
 python --version    # Verify Python version is => Py 3.x
-pip install pandas==0.23.0
+pip install pandas
 cd thailand_province_border_adjacency/test
 python test_province_relation_parser.py
 ```
